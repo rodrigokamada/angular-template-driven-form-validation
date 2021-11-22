@@ -3,7 +3,7 @@
 
 Application example built with [Angular 13](https://angular.io/) and adding form validation.
 
-This tutorial was posted on my [blog](https://rodrigo.kamada.com.br/blog/adicionando-validacao-no-formulario-em-uma-aplicacao-angular) in portuguese and on the [DEV Community]() in english.
+This tutorial was posted on my [blog](https://rodrigo.kamada.com.br/blog/adicionando-validacao-no-formulario-em-uma-aplicacao-angular) in portuguese and on the [DEV Community](https://dev.to/rodrigokamada/adding-form-validation-to-an-angular-application-387a) in english.
 
 
 
@@ -66,7 +66,7 @@ CREATE angular-validation/src/app/app.component.ts (223 bytes)
 
 **2.** Install and configure the Bootstrap CSS framework. Do steps 2 and 3 of the post *[Adding the Bootstrap CSS framework to an Angular application](https://github.com/rodrigokamada/angular-bootstrap)*.
 
-**3.** Create the `EmailValidatorDirective` directive.
+**3.** Let's create a custom validator for the email field. Create the `EmailValidatorDirective` directive.
 
 ```powershell
 ng generate directive email-validator --skip-tests=true
@@ -112,13 +112,13 @@ export class EmailValidatorDirective implements Validator {
 }
 ```
 
-**5.** Change the `src/app/app.component.ts` file. Import the `NgForm` service, create the `User` interface and create the `validate` method as below.
+**5.** Change the `src/app/app.component.ts` file. Import the `NgForm` service, create the `IUser` interface and create the `validate` function as below.
 
 ```typescript
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-interface User {
+interface IUser {
   name: string;
   nickname: string;
   email: string;
@@ -133,10 +133,10 @@ interface User {
 })
 export class AppComponent {
 
-  user: User;
+  user: IUser;
 
   constructor() {
-    this.user = {} as User;
+    this.user = {} as IUser;
   }
 
   public validate(form: NgForm): void {
@@ -151,7 +151,7 @@ export class AppComponent {
 }
 ```
 
-**6.** Change the `src/app/app.component.html` file and add the menu as below.
+**6.** Change the `src/app/app.component.html` file. Add the form as below.
 
 ```html
 <div class="container-fluid py-3">
@@ -238,7 +238,7 @@ export class AppComponent {
 </div>
 ```
 
-**7.** Import the `FormsModule` module and the `EmailValidatorDirective` directive. Change the `app.module.ts` file and add the lines as below.
+**7.** Change the `src/app/app.module.ts` file. Import the `FormsModule` module and the `EmailValidatorDirective` directive as below.
 
 ```typescript
 import { FormsModule } from '@angular/forms';
@@ -284,7 +284,7 @@ Build at: 2021-11-22T16:32:20.056Z - Hash: 1789217f1a21bafa - Time: 3632ms
 ✔ Compiled successfully.
 ```
 
-**19** Ready! Access the URL `http://localhost:4200/` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/angular-validation/) and [Stackblitz](https://stackblitz.com/edit/angular13-validation).
+**9.** Ready! Access the URL `http://localhost:4200/` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/angular-validation/) and [Stackblitz](https://stackblitz.com/edit/angular13-validation).
 
 ![Angular Validation](https://res.cloudinary.com/rodrigokamada/image/upload/v1637606970/Blog/angular-validation/angular-validation.png)
 
