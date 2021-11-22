@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-interface User {
+interface IUser {
   name: string;
   nickname: string;
   email: string;
@@ -16,10 +16,10 @@ interface User {
 })
 export class AppComponent {
 
-  user: User;
+  user: IUser;
 
   constructor() {
-    this.user = {} as User;
+    this.user = {} as IUser;
   }
 
   public validate(form: NgForm): void {
