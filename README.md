@@ -1,7 +1,7 @@
 # Angular Validation
 
 
-Application example built with [Angular 13](https://angular.io/) and adding form validation.
+Application example built with [Angular](https://angular.io/) 13 and adding form validation.
 
 This tutorial was posted on my [blog](https://rodrigo.kamada.com.br/blog/adicionando-validacao-no-formulario-em-uma-aplicacao-angular) in portuguese and on the [DEV Community](https://dev.to/rodrigokamada/adding-form-validation-to-an-angular-application-387a) in english.
 
