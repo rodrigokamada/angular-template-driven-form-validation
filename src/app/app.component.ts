@@ -6,7 +6,7 @@ interface IUser {
   nickname: string;
   email: string;
   password: string;
-  showPassword: boolean
+  showPassword: boolean;
 }
 
 @Component({
