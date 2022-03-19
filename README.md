@@ -1,4 +1,4 @@
-# Angular Validation
+# Angular Template-Driven Form Validation
 
 
 Application example built with [Angular](https://angular.io/) 13 and adding form validation.
@@ -34,32 +34,32 @@ Before you start, you need to install and configure the tools:
 **1.** Let's create the application with the Angular base structure using the `@angular/cli` with the route file and the SCSS style format.
 
 ```powershell
-ng new angular-validation --routing true --style scss
-CREATE angular-validation/README.md (1063 bytes)
-CREATE angular-validation/.editorconfig (274 bytes)
-CREATE angular-validation/.gitignore (620 bytes)
-CREATE angular-validation/angular.json (3279 bytes)
-CREATE angular-validation/package.json (1082 bytes)
-CREATE angular-validation/tsconfig.json (863 bytes)
-CREATE angular-validation/.browserslistrc (600 bytes)
-CREATE angular-validation/karma.conf.js (1435 bytes)
-CREATE angular-validation/tsconfig.app.json (287 bytes)
-CREATE angular-validation/tsconfig.spec.json (333 bytes)
-CREATE angular-validation/src/favicon.ico (948 bytes)
-CREATE angular-validation/src/index.html (303 bytes)
-CREATE angular-validation/src/main.ts (372 bytes)
-CREATE angular-validation/src/polyfills.ts (2338 bytes)
-CREATE angular-validation/src/styles.scss (80 bytes)
-CREATE angular-validation/src/test.ts (745 bytes)
-CREATE angular-validation/src/assets/.gitkeep (0 bytes)
-CREATE angular-validation/src/environments/environment.prod.ts (51 bytes)
-CREATE angular-validation/src/environments/environment.ts (658 bytes)
-CREATE angular-validation/src/app/app-routing.module.ts (245 bytes)
-CREATE angular-validation/src/app/app.module.ts (393 bytes)
-CREATE angular-validation/src/app/app.component.scss (0 bytes)
-CREATE angular-validation/src/app/app.component.html (23364 bytes)
-CREATE angular-validation/src/app/app.component.spec.ts (1109 bytes)
-CREATE angular-validation/src/app/app.component.ts (223 bytes)
+ng new angular-template-driven-form-validation --routing true --style scss
+CREATE angular-template-driven-form-validation/README.md (1063 bytes)
+CREATE angular-template-driven-form-validation/.editorconfig (274 bytes)
+CREATE angular-template-driven-form-validation/.gitignore (620 bytes)
+CREATE angular-template-driven-form-validation/angular.json (3279 bytes)
+CREATE angular-template-driven-form-validation/package.json (1082 bytes)
+CREATE angular-template-driven-form-validation/tsconfig.json (863 bytes)
+CREATE angular-template-driven-form-validation/.browserslistrc (600 bytes)
+CREATE angular-template-driven-form-validation/karma.conf.js (1435 bytes)
+CREATE angular-template-driven-form-validation/tsconfig.app.json (287 bytes)
+CREATE angular-template-driven-form-validation/tsconfig.spec.json (333 bytes)
+CREATE angular-template-driven-form-validation/src/favicon.ico (948 bytes)
+CREATE angular-template-driven-form-validation/src/index.html (303 bytes)
+CREATE angular-template-driven-form-validation/src/main.ts (372 bytes)
+CREATE angular-template-driven-form-validation/src/polyfills.ts (2338 bytes)
+CREATE angular-template-driven-form-validation/src/styles.scss (80 bytes)
+CREATE angular-template-driven-form-validation/src/test.ts (745 bytes)
+CREATE angular-template-driven-form-validation/src/assets/.gitkeep (0 bytes)
+CREATE angular-template-driven-form-validation/src/environments/environment.prod.ts (51 bytes)
+CREATE angular-template-driven-form-validation/src/environments/environment.ts (658 bytes)
+CREATE angular-template-driven-form-validation/src/app/app-routing.module.ts (245 bytes)
+CREATE angular-template-driven-form-validation/src/app/app.module.ts (393 bytes)
+CREATE angular-template-driven-form-validation/src/app/app.component.scss (0 bytes)
+CREATE angular-template-driven-form-validation/src/app/app.component.html (23364 bytes)
+CREATE angular-template-driven-form-validation/src/app/app.component.spec.ts (1109 bytes)
+CREATE angular-template-driven-form-validation/src/app/app.component.ts (223 bytes)
 ✔ Packages installed successfully.
     Successfully initialized git.
 ```
@@ -261,7 +261,7 @@ imports: [
 ```powershell
 npm start
 
-> angular-validation@1.0.0 start
+> angular-template-driven-form-validation@1.0.0 start
 > ng serve
 
 ✔ Browser application bundle generation complete.
@@ -284,7 +284,7 @@ Build at: 2021-11-22T16:32:20.056Z - Hash: 1789217f1a21bafa - Time: 3632ms
 ✔ Compiled successfully.
 ```
 
-**9.** Ready! Access the URL `http://localhost:4200/` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/angular-validation/) and [Stackblitz](https://stackblitz.com/edit/angular13-validation).
+**9.** Ready! Access the URL `http://localhost:4200/` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/angular-template-driven-form-validation/) and [Stackblitz](https://stackblitz.com/edit/angular13-validation).
 
 ![Angular Validation](https://res.cloudinary.com/rodrigokamada/image/upload/v1637606970/Blog/angular-validation/angular-validation.png)
 
@@ -295,7 +295,7 @@ Build at: 2021-11-22T16:32:20.056Z - Hash: 1789217f1a21bafa - Time: 3632ms
 **1.** Clone the repository.
 
 ```powershell
-git clone git@github.com:rodrigokamada/angular-validation.git
+git clone git@github.com:rodrigokamada/angular-template-driven-form-validation.git
 ```
 
 **2.** Install the dependencies.

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-validation": {
+    "angular-template-driven-form-validation": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-validation",
+            "outputPath": "dist/angular-template-driven-form-validation",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-validation:build:production"
+              "browserTarget": "angular-template-driven-form-validation:build:production"
             },
             "development": {
-              "browserTarget": "angular-validation:build:development"
+              "browserTarget": "angular-template-driven-form-validation:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-validation:build"
+            "browserTarget": "angular-template-driven-form-validation:build"
           }
         },
         "test": {
@@ -111,5 +111,5 @@
       }
     }
   },
-  "defaultProject": "angular-validation"
+  "defaultProject": "angular-template-driven-form-validation"
 }
