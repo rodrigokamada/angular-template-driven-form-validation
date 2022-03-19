@@ -155,7 +155,7 @@ export class AppComponent {
 
 ```html
 <div class="container-fluid py-3">
-  <h1>Angular Validation</h1>
+  <h1>Angular Template-Driven Form Validation</h1>
 
   <div class="row justify-content-center my-5">
     <div class="col-4">
@@ -284,9 +284,9 @@ Build at: 2021-11-22T16:32:20.056Z - Hash: 1789217f1a21bafa - Time: 3632ms
 ✔ Compiled successfully.
 ```
 
-**9.** Ready! Access the URL `http://localhost:4200/` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/angular-template-driven-form-validation/) and [Stackblitz](https://stackblitz.com/edit/angular13-validation).
+**9.** Ready! Access the URL `http://localhost:4200/` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/angular-template-driven-form-validation/) and [Stackblitz](https://stackblitz.com/edit/angular13-template-driven-form-validation).
 
-![Angular Validation](https://res.cloudinary.com/rodrigokamada/image/upload/v1637606970/Blog/angular-validation/angular-validation.png)
+![Angular Template-Driven Form Validation](https://res.cloudinary.com/rodrigokamada/image/upload/v1637606970/Blog/angular-validation/angular-validation.png)
 
 
 
