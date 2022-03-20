@@ -1,7 +1,7 @@
 {
   "name": "angular-template-driven-form-validation",
   "version": "1.0.0",
-  "description": "Application example built with Angular 13 and adding template-driven form validation.",
+  "description": "Application example built with Angular 13 and creating and validating a template-driven form.",
   "author": "Rodrigo Kamada <rodrigo@kamada.com.br> (https://github.com/rodrigokamada)",
   "license": "MIT",
   "private": true,
