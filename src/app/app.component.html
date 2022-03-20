@@ -24,10 +24,10 @@
         <div class="row">
           <div class="col mb-2">
             <label for="nickname" class="form-label">Nickname:</label>
-            <input type="text" id="nickname" name="nickname" #nickname="ngModel" [(ngModel)]="user.nickname" placeholder="Your nickname" maxlength="150" class="form-control form-control-sm" [class.is-invalid]="nickname.invalid && (nickname.dirty || nickname.touched)">
+            <input type="text" id="nickname" name="nickname" #nickname="ngModel" [(ngModel)]="user.nickname" placeholder="Your nickname" maxlength="10" class="form-control form-control-sm" [class.is-invalid]="nickname.invalid && (nickname.dirty || nickname.touched)">
             <div *ngIf="name.invalid && (name.dirty || name.touched)" class="invalid-feedback">
               <div *ngIf="name.errors?.['maxlength']">
-                This field must have at most 150 characters.
+                This field must have at most 10 characters.
               </div>
             </div>
           </div>
