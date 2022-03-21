@@ -146,6 +146,11 @@ export class AppComponent {
       }
       return;
     }
+
+    console.info('Name:', this.user.name);
+    console.info('Nickname:', this.user.nickname);
+    console.info('Email:', this.user.email);
+    console.info('Password:', this.user.password);
   }
 
 }
@@ -163,7 +168,7 @@ export class AppComponent {
         <div class="row">
           <div class="col mb-2">
             <label for="name" class="form-label">Name:</label>
-            <input type="text" id="name" name="name" #name="ngModel" [(ngModel)]="user.name" placeholder="Your name" required minlength="1" maxlength="250" emailValidator class="form-control form-control-sm" [class.is-invalid]="name.invalid && (name.dirty || name.touched)">
+            <input type="text" id="name" name="name" #name="ngModel" [(ngModel)]="user.name" placeholder="Your name" required minlength="1" maxlength="250" class="form-control form-control-sm" [class.is-invalid]="name.invalid && (name.dirty || name.touched)">
             <div *ngIf="name.invalid && (name.dirty || name.touched)" class="invalid-feedback">
               <div *ngIf="name.errors?.['required']">
                 This field is required.
@@ -181,8 +186,8 @@ export class AppComponent {
           <div class="col mb-2">
             <label for="nickname" class="form-label">Nickname:</label>
             <input type="text" id="nickname" name="nickname" #nickname="ngModel" [(ngModel)]="user.nickname" placeholder="Your nickname" maxlength="10" class="form-control form-control-sm" [class.is-invalid]="nickname.invalid && (nickname.dirty || nickname.touched)">
-            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="invalid-feedback">
-              <div *ngIf="name.errors?.['maxlength']">
+            <div *ngIf="nickname.invalid && (nickname.dirty || nickname.touched)" class="invalid-feedback">
+              <div *ngIf="nickname.errors?.['maxlength']">
                 This field must have at most 10 characters.
               </div>
             </div>

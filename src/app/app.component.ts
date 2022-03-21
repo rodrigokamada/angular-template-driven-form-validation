@@ -29,6 +29,11 @@ export class AppComponent {
       }
       return;
     }
+
+    console.info('Name:', this.user.name);
+    console.info('Nickname:', this.user.nickname);
+    console.info('Email:', this.user.email);
+    console.info('Password:', this.user.password);
   }
 
 }
