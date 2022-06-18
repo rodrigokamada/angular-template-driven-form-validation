@@ -1,7 +1,7 @@
 # Angular Template-Driven Form Validation
 
 
-Application example built with [Angular](https://angular.io/) 13 and creating and validating a template-driven form.
+Application example built with [Angular](https://angular.io/) 14 and creating and validating a template-driven form.
 
 This tutorial was posted on my [blog](https://rodrigo.kamada.com.br/blog/adicionando-validacao-no-formulario-em-uma-aplicacao-angular) in portuguese and on the [DEV Community](https://dev.to/rodrigokamada/adding-form-validation-to-an-angular-application-387a) in english.
 
@@ -297,7 +297,7 @@ Build at: 2021-11-22T16:32:20.056Z - Hash: 1789217f1a21bafa - Time: 3632ms
 ✔ Compiled successfully.
 ```
 
-**9.** Ready! Access the URL `http://localhost:4200/` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/angular-template-driven-form-validation/) and [Stackblitz](https://stackblitz.com/edit/angular13-template-driven-form-validation).
+**9.** Ready! Access the URL `http://localhost:4200/` and check if the application is working. See the application working on [GitHub Pages](https://rodrigokamada.github.io/angular-template-driven-form-validation/) and [Stackblitz](https://stackblitz.com/edit/angular14-template-driven-form-validation).
 
 ![Angular Template-Driven Form Validation](https://res.cloudinary.com/rodrigokamada/image/upload/v1637606970/Blog/angular-validation/angular-validation.png)
 
